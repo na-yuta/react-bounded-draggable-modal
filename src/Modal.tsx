@@ -1,5 +1,5 @@
 import React from "react";
-import { useBoundedDrag } from "./useBoundedDrag";
+import { useBoundedDrag } from "react-parent-bound-drag";
 
 interface ClassNames {
   modal?: string;

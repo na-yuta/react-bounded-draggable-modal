@@ -1,9 +1,8 @@
 import resolve from "@rollup/plugin-node-resolve";
-import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
+import commonjs from "@rollup/plugin-commonjs";
 import dts from "rollup-plugin-dts";
 import packageJson from "./package.json" assert { type: "json" };
-
 
 export default [
   {
@@ -20,7 +19,11 @@ export default [
         sourcemap: true
       }
     ],
-    plugins: [resolve(), commonjs(), typescript()],
+    plugins: [
+      typescript({ tsconfig: "./tsconfig.json" }),
+      resolve({ extensions: [".js", ".jsx", ".ts", ".tsx"] }),
+      commonjs()
+    ],
     external: ["react", "react-dom"]
   },
   {
