@@ -1,26 +1,12 @@
 {
   "name": "react-bounded-draggable-modal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A draggable modal component with boundary support for React and Next.js",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
-  ],
   "scripts": {
-    "build": "rollup -c",
-    "prepare": "npm run build"
-  },
-  "peerDependenciesMeta": {
-    "react": {
-      "optional": true
-    },
-    "react-dom": {
-      "optional": true
-    }
+    "build": "rollup -c"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
@@ -41,6 +27,8 @@
   "author": "na-yuta",
   "license": "MIT",
   "dependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
     "react-parent-bound-drag": "^1.1.1"
   },
   "devDependencies": {
