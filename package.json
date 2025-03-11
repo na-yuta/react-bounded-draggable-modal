@@ -1,6 +1,6 @@
 {
   "name": "react-bounded-draggable-modal",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A draggable modal component with boundary support for React and Next.js",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -16,6 +16,11 @@
     "type": "git",
     "url": "https://github.com/na-yuta/react-bounded-draggable-modal"
   },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
   "keywords": [
     "react",
     "modal",
